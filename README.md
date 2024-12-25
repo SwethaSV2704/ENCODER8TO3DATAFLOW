@@ -36,20 +36,43 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+```
+1.Write HDL Code: Create Verilog or VHDL code for your design.
+2.Compile the Design: Compile the HDL code to check for errors and prepare for synthesis.
+3.Generate RTL Schematic: View and export the RTL schematic to see the logic design.
+4.Create Input/Output Nodes: Define the nodes for the signals you will monitor in the timing diagram.
+5.Run Simulation: Simulate the design and capture the timing diagram.
+6.Save the Logic Diagram and Timing Diagram: Export the diagrams to files for documentation.
+```
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by: SWETHA S V RegisterNumber: 24000297
 */
+```
+
+module de5(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c); 
+input d1,d2,d3,d4,d5,d6,d7;
+output a,b,c;
+ assign a=(d4|d5|d6|d7); 
+ assign b=(d2|d3|d6|d7); 
+ assign c=(d1|d3|d5|d7);
+endmodule
+
+
+```
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-12-25 110727](https://github.com/user-attachments/assets/1cd9029d-91e7-45f4-aecf-1e79ae803a32)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-12-25 110804](https://github.com/user-attachments/assets/67a7755e-1865-4ddb-ad6f-12cd6910085b)
 
 **RESULTS**
+
+Therefore encoder 8 to 3 in dataflowing modeling using verilog and validating their functionally using their functional tables is verified.
 
 
 
